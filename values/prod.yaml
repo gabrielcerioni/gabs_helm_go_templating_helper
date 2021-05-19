@@ -2,7 +2,7 @@ replicaCount: 2
 maxReplicaCount: 4
 environment: prd
 image:
-  name: eahrend/sql-scaler:latest
+  name: nginx/nginx-ingress
   pullPolicy: Always
 team: web
 resources:
