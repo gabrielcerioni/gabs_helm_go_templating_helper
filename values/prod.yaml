@@ -1,5 +1,5 @@
-replicaCount: 2
-maxReplicaCount: 4
+replicaCount: 1
+maxReplicaCount: 1
 environment: prd
 image:
   name: nginx/nginx-ingress
