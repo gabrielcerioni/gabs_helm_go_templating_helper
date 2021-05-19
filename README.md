@@ -1,1 +1,2 @@
-# gabs_helm_go_templating_helper
+# sql-scaler-helm
+Helm chart for sql scaling tester

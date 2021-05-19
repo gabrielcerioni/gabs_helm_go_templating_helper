@@ -1,0 +1,21 @@
+replicaCount: 2
+maxReplicaCount: 4
+environment: prd
+image:
+  name: eahrend/sql-scaler:latest
+  pullPolicy: Always
+team: web
+resources:
+  requests:
+    memory: "180Mi"
+    cpu: "100m"
+  limits:
+    memory: "360Mi"
+
+targetCPUUtilization: 60
+targetMemoryUtilization: 60
+
+c_env:
+  env: prd
+  CONN_COUNT: ${serviceVariable.connCount}
+  DSN: ${serviceVariable.dsn}
