@@ -1,8 +1,8 @@
-replicaCount: 2
-maxReplicaCount: 4
+replicaCount: 1
+maxReplicaCount: 1
 environment: dev
 image:
-  name: nginx/nginx-ingress
+  name: bitnami/nginx
   pullPolicy: Always
 team: web
 resources:
